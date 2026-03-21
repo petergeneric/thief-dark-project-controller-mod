@@ -1,21 +1,27 @@
-This mod aims to add full controller support to Thief: The Dark Project.
+This mod aims to add full controller support to Thief 1 and Thief 2.
 
 It is a work in progress
 
 [![Watch the video](https://img.youtube.com/vi/HQQ11GK6pfg/maxresdefault.jpg)](https://www.youtube.com/watch?v=HQQ11GK6pfg)
 [Demo Video](https://www.youtube.com/watch?v=HQQ11GK6pfg)
 
-
+Features
+--------
+- Friendly radial menu for your inventory
+- Time slows when the menu is open
+- D-Pad navigation of key menus
+- Automatic key management (where the Mission makes it possible), based on [Sarcoth's excellent J4F Keychain](https://github.com/saracoth/newdark-mods/releases/latest)
 
 
 Installation
 ------------
 
-1. Take a backup of your thief1 install folder (user.bnd and gamesys.dml will be overwritten)
-2. Make sure TFix 1.27 is installed
-3. Unpack the contents of thief_gold/ into that install folder
-4. Ideally, copy the Thief2.exe from NewDark v1.28 20250515 into your install folder, and run that (it'll run in Thief 1 mode) and run that .exe
+1. Take a backup of your thief `user.bnd` file
+2. Make sure TFix 1.27 is installed (or NewDark 1.28 20250515)
+3. Download gamepad.zip and install using [DMM](https://github.com/pshjt/dmm)
+4. Copy `dinput.dll` and `user.bnd` from `MODS/gamepad/` into your game folder
 
+For more details, and troubleshooting, see [INSTALLING.md](INSTALLING.md)
 
 Controls
 --------
@@ -54,27 +60,18 @@ Movement has two speed modes (toggle with LS click):
   Fast mode: small range for walk, rest is run
 Full stick deflection auto-exits slow mode. Keeping the stick below 30% for 1 second auto-returns to slow mode.
 
-Gamepads
---------
-
-I'm testing with an Xbox One controller, but any modern gamepad *should* work
-
-Operating System
-----------------
-
-I've tested on macOS Apple Silicon (Crossover Office), and 64-bit Windows 11
-
 Configuration
 -------------
 
-Edit OSM/gamepad/gamepad.ini to adjust deadzone, sensitivity, and look settings.
+Edit MODS/gamepad/gamepad.ini to adjust deadzone, sensitivity, and other settings and features.
 
 
 Feedback
 --------
 
 Feedback welcome!
+
  - Create an issue on this repository
- - [TTLG](https://www.ttlg.com/forums/forumdisplay.php?f=174) where I am darkbauble
+ - [TTLG](https://www.ttlg.com/forums/showthread.php?t=153292&p=2536935#post2536935)
  - [Bluesky](https://bsky.app/profile/levitime.com)
  - Discord
