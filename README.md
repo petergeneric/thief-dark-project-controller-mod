@@ -10,7 +10,7 @@ Features
 - Friendly radial menu for your inventory
 - Time slows when the menu is open
 - D-Pad navigation of key menus
-- Automatic key management (where the Mission makes it possible), based on [Sarcoth's excellent J4F Keychain](https://github.com/saracoth/newdark-mods/releases/latest)
+- Automatic key management (where the Mission makes it possible), based off [Sarcoth's excellent J4F Keychain](https://github.com/saracoth/newdark-mods/releases/latest). Optional.
 
 
 Installation
@@ -19,7 +19,7 @@ Installation
 1. Take a backup of your thief `user.bnd` file
 2. Make sure TFix 1.27 is installed (or NewDark 1.28 20250515)
 3. Download gamepad.zip and install using [DMM](https://github.com/pshjt/dmm)
-4. Copy `dinput.dll` and `user.bnd` from `MODS/gamepad/` into your game folder
+4. Copy `dinput.dll` from `MODS/gamepad/` into your game folder
 
 For more details, and troubleshooting, see [INSTALLING.md](INSTALLING.md)
 
