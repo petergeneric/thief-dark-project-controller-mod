@@ -78,7 +78,7 @@ I'm poking around a bit at the internals of the NewDark engine for this mod, so 
 
 1. The joypad sticks don't work in the main menu (or right stick works, left doesn't, A/B doesn't work)
  - This probably means you don't have dinput.dll installed in your Thief/Thief2 game folder (alongside your thief exe file)
- - Alternatively, it could be your controller isn't supported - I've only got an Xbox One controller (but it should work with any DirectInput controller), please get in touch with me and I'll see what I can do
+ - Alternatively, it could be your controller isn't supported - I've only got an Xbox One controller (but it should work with any XInput controller), please get in touch with me and I'll see what I can do
 
 2. The dpad navigation doesn't work in the main menu screen
  - This is likely caused by the game engine not being the expected version (the latest TFix 1.27, or ideally NewDark 1.28 20250515)
