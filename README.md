@@ -2,9 +2,8 @@ This mod aims to add full controller support to Thief 1 and Thief 2.
 
 It is a work in progress
 
-[![Watch the video](https://img.youtube.com/vi/HQQ11GK6pfg/maxresdefault.jpg)](https://www.youtube.com/watch?v=HQQ11GK6pfg)
-[Demo Video](https://www.youtube.com/watch?v=HQQ11GK6pfg)
-
+[![Watch the video](https://img.youtube.com/vi/Vp-ogAktpUI/maxresdefault.jpg)](https://www.youtube.com/watch?v=Vp-ogAktpUI)
+[Demo Video](https://www.youtube.com/watch?v=Vp-ogAktpUI)
 Features
 --------
 - Friendly radial menu for your inventory
@@ -17,7 +16,7 @@ Installation
 ------------
 
 1. Take a backup of your thief `user.bnd` file
-2. Make sure TFix 1.27 is installed (or NewDark 1.28 20250515)
+2. Install TFix 1.27, (optionally and preferably add NewDark 1.28 20250515)
 3. Download gamepad.zip and install using [DMM](https://github.com/pshjt/dmm)
 4. Copy `dinput.dll` from `MODS/gamepad/` into your game folder
 
@@ -42,10 +41,9 @@ LT                  Block
 RT                  Attack / use weapon
 
 LB + Left Stick     Lean left / right / forward
-RB (hold)           Radial inventory menu (select with left stick)
+RB (hold)           Radial inventory menu (select with left/right sticks)
 
-LS click            Toggle slow/fast movement mode
-RS click            Toggle creep
+RS click            Force sneak speed
 
 D-pad Up            Cycle Weapons (next)
 D-pad Down          Cycle Weapons (previous)

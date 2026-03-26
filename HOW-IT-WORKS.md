@@ -37,10 +37,10 @@ the mouse.
 
 ## Radial Menu
 
-The radial menu allows the player to view and choose from their inventory with the joysticks.
+The radial menus allow the player to view and choose from their inventory with the joysticks.
 
 The mod detects when RB is pressed, signals a SimTime scale change to the engine and then
-stops sending gamepad inputs to the engine, handling them internally.
+switches to internal control mode, where it stops sending gamepad inputs to the engine, handling them itself.
 
 
 # In Menus
@@ -104,12 +104,9 @@ engine releases breaking functionality.
 If only NewDark was open to PRs!
 
 Here are the following areas that I have to peek inside / modify the engine:
-1. Accessing internal COM services (InventoryService) - I trick the OSM script module into
-giving me access to COM services that weren't intended to be supplied to script modules,
-because otherwise there is no way I can see to unequip an Item, InvSelect rejects immediately
-if passed ObjectId 0.
-2. Menu Detection: hooking into pointer reset calls
-3. Menu Detection: scanning memory locations to find Main Menu, etc. structures
+1. Internal COM Service: InventoryService. InventoryService is necessary because otherwise there is no way I can see to unequip an Item, InvSelect rejects immediately if passed ObjectId 0.
+2. Internal COM Service + hook: ILoop. This is necessary to work out which mode the game is in, and get menu button rects for navigation
+2. Main Menu Layout: requires scanning memory locations to find Main Menu, etc. structures (ILoop hooking does not appear to give me main menu pointer)
 4. Sim Time: the engine appears to suppport changing sim_time with a debug command (symbol
 exists in THIEF.EXE but running it does nothing), however the engine does store an internal
 sim time step value. I scan for this structure at startup (looking for initial values) and
@@ -119,9 +116,4 @@ would be really helpful, and it could potentially be opened up to other mods (al
 without its issues, since setting it too low can cause problems that the OSM can't repair)
 5. EndFrame: to render the radial menu, I hook into EndFrame and then inject arbitrary
 draw commands after the engine has done its work for the frame. The goal by doing this
-is to allow a more complex set of overlays than is possible with the DarkOverlay service.
-Currently the radial menu probably could be handled with Dark overlays and transparency, but
-eventually I want to render item models directly rather than image icons (so that FM items
-can appear cleanly)
-6. Direct3D Device Capture: in order to do my EndFrame trick, I need to intercept the
-Direct3D Device the game creates.
+is to allow a more complex + faster class of overlays than is possible with the DarkOverlay service.
