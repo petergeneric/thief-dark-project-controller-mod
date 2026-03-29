@@ -6,3 +6,8 @@ This project relies on the hard work of the community, including:
  - [KCTools](https://github.com/JarrodDoyle/KCTools) Dark Engine BIN Model Format by Jarrod Doyle
  - [Ghidra](https://www.nsa.gov/ghidra) by the NSA
  - All the helpful folks on Thief and DromEd discord servers
+
+
+A huge thank you to the folks who helped me test this mod, and the ideas they provided
+ - sub-res
+ - marsupial
