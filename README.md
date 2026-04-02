@@ -27,6 +27,9 @@ For more details, and troubleshooting, see [INSTALLING.md](INSTALLING.md)
 Controls
 --------
 
+![](bindings.svg)
+
+
 ```
 Left Stick          Move (analogue)
 Right Stick         Look / camera
