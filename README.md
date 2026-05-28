@@ -1,6 +1,4 @@
-This mod aims to add full controller support to Thief 1 and Thief 2.
-
-It is a work in progress
+This mod adds full controller support to Thief 1 and Thief 2.
 
 [![Watch the video](screenshot.jpeg)](https://www.youtube.com/watch?v=Vp-ogAktpUI)
 [Demo Video](https://www.youtube.com/watch?v=Vp-ogAktpUI)
@@ -11,7 +9,7 @@ Features
 - Friendly radial menus for weapons and inventory
 - Time slows when the menu is open
 - D-Pad navigation of key menus
-- Automatic key management (where the mission makes it possible), based off [Sarcoth's excellent J4F Keychain](https://github.com/saracoth/newdark-mods/releases/latest). Optional.
+- Optional automatic key management (where the mission makes it possible), based off [Sarcoth's excellent J4F Keychain](https://github.com/saracoth/newdark-mods/releases/latest).
 
 
 Installation
