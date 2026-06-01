@@ -1,7 +1,7 @@
 This mod adds full controller support to Thief 1 and Thief 2.
 
-[![Watch the video](screenshot.jpeg)](https://www.youtube.com/watch?v=Vp-ogAktpUI)
-[Demo Video](https://www.youtube.com/watch?v=Vp-ogAktpUI)
+[![Watch the video](screenshot.jpeg)](https://www.youtube.com/watch?v=HY29B94PAuA)
+[Demo Video](https://www.youtube.com/watch?v=HY29B94PAuA)
 
 
 Features
