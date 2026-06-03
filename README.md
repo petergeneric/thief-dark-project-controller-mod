@@ -20,6 +20,8 @@ Installation
 3. Download gamepad.zip and install using [DMM](https://github.com/pshjt/dmm)
 4. Copy `dinput.dll` from `MODS/gamepad/` into your game folder
 
+*For Steam Deck users:* Add `WINEDLLOVERRIDES="dinput=n,b" %command%` to your launch arguments in Steam  
+
 For more details, and troubleshooting, see [INSTALLING.md](INSTALLING.md)
 
 Controls
