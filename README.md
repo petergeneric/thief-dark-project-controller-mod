@@ -56,6 +56,10 @@ D-pad Down          Cycle Weapons (previous)
 D-pad Left          Cycle Items (previous)
 D-pad Right         Cycle Items (next)
 
+LB + Dpad Up/Down   Zoom in/out (Thief 2)
+					N.B. does not work with arrows if Bow Zoom is enabled (game limitation)
+LB + Dpad Left		Cycle Lockpick (Triangle/Square picks)
+
 Back                Map
 Back (hold)			Equip/Unequip item
 Start               Game menu
