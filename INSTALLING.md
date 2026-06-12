@@ -17,10 +17,11 @@ Without this extra step, the mod cannot work.
 ENGINE VERSION
 --------------
 
-This mod requires either:
- - The latest TFix 1.27
- - NewDark 1.28 20250515 (preferably; works best with TFix installed first)
+If you're unfamiliar with Thief, you'll probably want to [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977) to get the latest engine version and fixes. [TFix](https://www.ttlg.com/forums/showthread.php?t=134733) will also work, but I recommend you install the NewDark 1.28 engine exe too (see below).
 
+[NewDark 1.28 20250515]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)) is highly recommended no matter how you install. The mod will work with NewDark 1.27 but some features will not work.
+
+For my install, I've also installed TFix first, but this shouldn't be necessary.
  
  GAMES
  -----

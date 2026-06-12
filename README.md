@@ -16,9 +16,9 @@ Installation
 ------------
 
 1. Take a backup of your thief `user.bnd` file
-2. Install TFix 1.27, (optionally and preferably add NewDark 1.28 20250515)
-3. Download gamepad.zip and install using [DMM](https://github.com/pshjt/dmm)
-4. Copy `dinput.dll` from `MODS/gamepad/` into your game folder
+2. You'll need the latest NewDark 1.28. If in doubt, [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977). [TFix 1.27i](https://www.ttlg.com/forums/showthread.php?t=134733) also works. You can also get [NewDark 1.28 20250515]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)) over an existing NewDark 1.27 install if needed. This mod *will* work with NewDark 1.27 but some features don't (due to engine and reverse engineering limitations).
+4. Download gamepad.zip and install using [DMM](https://github.com/pshjt/dmm)
+5. Copy `dinput.dll` from `MODS/gamepad/` into your game folder
 
 *For Steam Deck users:* Add `WINEDLLOVERRIDES="dinput=n,b" %command%` to your launch arguments in Steam  
 
@@ -76,7 +76,9 @@ Full stick deflection auto-exits slow mode. Keeping the stick below 30% for 1 se
 Configuration
 -------------
 
-Edit *MODS/gamepad/gamepad.ini* to adjust deadzone, sensitivity, customise button bindings, and more.
+Use *MODS/gamepad/GamepadConfig.exe* to adjust deadzone, sensitivity, customise button bindings, and more. You can also manually add your own gamepad.ini in the game's folder and customise it.
+
+When adjusting look sensitivity, I find it best to keep the game's Mouse Sensitivity reasonably low and increase the mod's sensitivity - this will provide smoother motion at slow speeds (due to how passing mouse inputs to games works).
 
 
 Feedback
