@@ -16,7 +16,7 @@ Installation
 ------------
 
 1. Take a backup of your thief `user.bnd` file
-2. You'll need the latest NewDark 1.28. If in doubt, [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977). [TFix 1.27i](https://www.ttlg.com/forums/showthread.php?t=134733) also works. You can also get [NewDark 1.28 20250515]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)) over an existing NewDark 1.27 install if needed. This mod *will* work with NewDark 1.27 but some features don't (due to engine and reverse engineering limitations).
+2. You'll need the latest NewDark 1.28. If in doubt, [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977) or [TFix 1.27i](https://www.ttlg.com/forums/showthread.php?t=134733). You can also directly install [NewDark 1.28 20250515]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)) over an existing NewDark 1.27 install if needed. This mod *will* work with NewDark 1.27 but some features don't (due to engine and reverse engineering limitations).
 4. Download gamepad.zip and install using [DMM](https://github.com/pshjt/dmm)
 5. Copy `dinput.dll` from `MODS/gamepad/` into your game folder
 
