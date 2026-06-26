@@ -7,6 +7,7 @@ This mod adds full controller support to Thief 1 and Thief 2.
 Features
 --------
 - Friendly radial menus for weapons and inventory
+- Keyboard/mouse radial supprt
 - Time slows when the menu is open
 - D-Pad navigation of key menus
 - Optional automatic key management (where the mission makes it possible), based off [Sarcoth's excellent J4F Keychain](https://github.com/saracoth/newdark-mods/releases/latest).
@@ -16,8 +17,7 @@ Installation
 ------------
 
 1. Take a backup of your thief `user.bnd` file
-2. You'll need the latest NewDark 1.28. If in doubt, [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977) or [TFix 1.27i](https://www.ttlg.com/forums/showthread.php?t=134733). You can also directly install [NewDark 1.28 20250515]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)) over an existing NewDark 1.27 install if needed. This mod *will* work with NewDark 1.27 but some features don't (due to engine and reverse engineering limitations).
-4. Download gamepad.zip and install using [DMM](https://github.com/pshjt/dmm)
+2. You'll need the NewDark 1.27 or 1.28. If in doubt, [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977) or [TFix](https://www.ttlg.com/forums/showthread.php?t=134733). You can also directly install [NewDark 1.28]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)). I find NewDark 1.28 works best.
 5. Copy `dinput.dll` from `MODS/gamepad/` into your game folder
 
 *For Steam Deck users:* Add `WINEDLLOVERRIDES="dinput=n,b" %command%` to your launch arguments in Steam  
