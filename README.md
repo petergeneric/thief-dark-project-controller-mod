@@ -16,13 +16,13 @@ Features
 Installation
 ------------
 
-1. Take a backup of your thief `user.bnd` file
-2. You'll need the NewDark 1.27 or 1.28. If in doubt, [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977) or [TFix](https://www.ttlg.com/forums/showthread.php?t=134733). You can also directly install [NewDark 1.28]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)). I find NewDark 1.28 works best.
-5. Copy `dinput.dll` from `MODS/gamepad/` into your game folder
+See [Install Guide](INSTALLING.md) for full information. Basic process is:
 
-*For Steam Deck users:* Add `WINEDLLOVERRIDES="dinput=n,b" %command%` to your launch arguments in Steam  
-
-For more details, and troubleshooting, see [INSTALLING.md](INSTALLING.md)
+1. You'll need NewDark 1.27 or 1.28. If in doubt, [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977) or [TFix](https://www.ttlg.com/forums/showthread.php?t=134733). You can also directly install [NewDark 1.28]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)). I find NewDark 1.28 works best.
+2. Take a backup of your thief `user.bnd` file
+3. Install gamepad.zip using DMM, and enable the mod
+4. Run `MODS/gamepad/GamepadConfig.exe` (or copy `dinput.dll` from `MODS/gamepad` into your thief install folder)
+5. *Steam Deck users:* Add `WINEDLLOVERRIDES="dinput=n,b" %command%` to your Thief launch arguments in Steam, and enable Joystick Mode for Thief.
 
 Controls
 --------
@@ -79,14 +79,16 @@ Configuration
 Use *MODS/gamepad/GamepadConfig.exe* to adjust deadzone, sensitivity, customise button bindings, and more. You can also manually add your own gamepad.ini in the game's folder and customise it.
 
 When adjusting look sensitivity, I find it best to keep the game's Mouse Sensitivity reasonably low and increase the mod's sensitivity - this will provide smoother motion at slow speeds (due to how passing mouse inputs to games works).
-
+Alternatively, enable high dpi mouse settings for the game per the Install Guide.
 
 Feedback
 --------
 
-Feedback welcome!
+If you run into a problem, please check the [Troubleshooting Guide](TROUBLESHOOTING.md), and raise a github issue if that doesn't help.
 
- - Create an issue on this repository
+Links
+-----
+
  - [TTLG](https://www.ttlg.com/forums/showthread.php?t=153292&p=2536935#post2536935)
- - [Bluesky](https://bsky.app/profile/levitime.com)
- - Dromed Discord
+ - [ModDB](https://www.moddb.com/mods/thief-controller-mod)
+ - Visit the Dromed Discord
