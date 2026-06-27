@@ -1,47 +1,97 @@
-GAMEPAD AND RADIAL MENU SUPPORT FOR THIEF 1 AND 2
-=================================================
+Installation Guide
+==================
 
-Copyight (c) Peter Wright 2026
-https://www.ttlg.com/forums/showthread.php?t=153292
+Copyright (c) Peter Wright 2026
 
-NOTE: INSTALL THIS MOD WITH DMM, Dark Engine Mod Manager
-NOTE: THIS MOD INSTALLATION REQUIRES EXTRA STEPS AFTER DMM INSTALL!
-
-To fully install this mod, install and enable with DMM, then go into MODS/gamepad/ and copy dinput.dll
-into the root of your thief game folder (alongside THIEF.EXE or THIEF2.EXE)
-
-Without this extra step, the mod cannot work.
+After install, if something isn't working properly, see the [Troubleshooting Guide](TROUBLESHOOTING.md).
 
 
+Quick Start
+-----------
 
-ENGINE VERSION
+1. Make sure you have **NewDark 1.27 or 1.28** (see *Engine Version* below).
+2. Take a backup of your Thief `user.bnd` file.
+3. Install `gamepad.zip` with [DMM](https://github.com/pshjt/dmm) and enable the mod.
+4. Run `MODS/gamepad/GamepadConfig.exe`. This copies `dinput.dll` into your game folder
+   for you and lets you customise the mod. (If you prefer, you can skip the config tool
+   and manually copy `dinput.dll` from `MODS/gamepad/` into the root of your game folder,
+   alongside `THIEF.EXE` / `THIEF2.EXE`.)
+5. See *Steam Deck, Proton and Wine* below for additional steps for Steam Deck
+
+N.B. Without step 4 the mod cannot work — `dinput.dll` is what converts the engine's old DirectInput API to modern XInput and hooks into the core engine features the mod relies on.
+
+
+Engine Version
 --------------
 
-If you're unfamiliar with Thief, you'll probably want to [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977) to get the latest engine version and fixes. [TFix](https://www.ttlg.com/forums/showthread.php?t=134733) will also work, but I recommend you install the NewDark 1.28 engine exe too (see below).
+The mod requires NewDark and supports *v1.27** and **1.28** (tested up to NewDark 1.28 20250515). I find 1.28 works best
 
-[NewDark 1.28 20250515]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)) is highly recommended no matter how you install. The mod will work with NewDark 1.27 but some features will not work.
+If you're unfamiliar with Thief, the easiest way to get a recent, patched engine is to use one of these:
 
-For my install, I've also installed TFix first, but this shouldn't be necessary.
- 
- GAMES
- -----
-
- - Thief 1 (I have tested with Thief Gold)
- - Thief 2 (Only Mission 1 tested so far)
-
-I have not tested it with Fan Missions, but it should work. Please report issues to me
-
-OPERATING SYSTEM VERSIONS
--------------------------
-
-I've tested with:
- - Crossover Office 26 (Wine, under macOS Apple Silicon - my primary target)
- - Windows 11
+ - [RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977)
+ - [TFix](https://www.ttlg.com/forums/showthread.php?t=134733)
+ - [NewDark 1.28](https://www.ttlg.com/forums/showthread.php?t=152974) — manual engine update ([download](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502))
 
 
-CREDITS
--------
+Backing Up Your Bindings
+------------------------
 
- - Pixel Art by Plutonia - https://www.youtube.com/@Plutonia001
- - NewDark
- - osm-rs Dark Engine Scripting in Rust by Jarrod Doyle - https://github.com/JarrodDoyle/osm-rs
+By default, the mod enables joystick input and writes joybutton bindings to your `user.bnd` on launch. If it changes anything, it first backs up your previous settings to `user.bnd.bak`.
+
+You should still take your own backup of `user.bnd` before installing, just in case. The values the mod applies are listed in the bundled `auto.user.bnd`.
+
+If you'd rather manage your own bindings, set `force_joystick_binds = false` in `gamepad.ini`.
+
+
+Recommended: High-DPI Mouse Settings
+------------------------------------
+
+For the smoothest look/camera control, tell the engine to treat the controller's right stick as a high-DPI mouse. Add the following two lines to `cam_ext.cfg` in your game folder:
+
+```
+use_raw_mouse_input 1
+raw_mouse_sens_scale 0.5
+```
+
+Alternatively, keep the game's in-game Mouse Sensitivity slider reasonably low and raise the mod's own sensitivity in `GamepadConfig.exe`. A low in-game sensitivity lets the mod supply more precise inputs which reduces juddering.
+
+
+Configuration
+-------------
+
+Run `MODS/gamepad/GamepadConfig.exe` to adjust deadzones, look sensitivity, rumble, button bindings, and more — and to update the mod when a new release is available. Settings are saved to a `gamepad.ini` in your game folder so they survive mod upgrades. You can also create or edit that `gamepad.ini` by hand; see the bundled file for the available options and their defaults.
+
+
+Steam Deck, Proton and Wine
+---------------------------
+
+Under Proton or Wine, mark `dinput.dll` as **"native then built-in"** so the engine loads the
+mod's DLL. In Steam, set the game's Launch Options to:
+
+```
+WINEDLLOVERRIDES="dinput=n,b" %command%
+```
+
+On Steam Deck, also remember to set Thief to use **Joystick mode** in the controller
+settings.
+
+
+Fan Missions
+------------
+
+If the mod doesn't work (for example in the default version of *The Black Parade*), edit the FM's `fm.cfg` and remove the `apply_dbmods 0` line. That line tells the engine not to load any `.dml`/`.osm` mods (normally to stop mods interfering with the FM, but this also blocks this mod from working).
+
+
+Gamepads
+--------
+
+Any XInput device should work. The mod has been tested with:
+
+ - The Xbox Wireless Controller (the primary target)
+ - Playstation controllers (e.g. DualSense) via DS4Windows
+ - Steam Deck
+
+Updating
+--------
+
+The bundled `GamepadConfig.exe` includes an update feature (in the About tab)
