@@ -79,7 +79,7 @@ Configuration
 Use *MODS/gamepad/GamepadConfig.exe* to adjust deadzone, sensitivity, customise button bindings, and more. You can also manually add your own gamepad.ini in the game's folder and customise it.
 
 When adjusting look sensitivity, I find it best to keep the game's Mouse Sensitivity reasonably low and increase the mod's sensitivity - this will provide smoother motion at slow speeds (due to how passing mouse inputs to games works).
-Alternatively, enable high dpi mouse settings for the game per the Install Guide.
+Alternatively, enable high dpi mouse settings for the game per the [Install Guide](INSTALLING.md#recommended-high-dpi-mouse-settings).
 
 Feedback
 --------
