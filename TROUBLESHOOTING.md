@@ -34,3 +34,6 @@ TROUBLESHOOTING
 
 11. The game is juddery at higher framerates
  - This appears to be mostly an engine limitation; enabling high dpi mouse input (see INSTALLING.md) can help with this somewhat.  
+
+12. The overlay isn't working, or is behaving strangely and I have RivaTuner installed
+ - RivaTuner appears to be a bad citizen, and aggressively removes any hooks but its own. Its 'detour' mode appears to work collaboratively with other mods. Despite this, RivaTuner may interfere in other ways, I'd recommend disabling/removing it entirely.
