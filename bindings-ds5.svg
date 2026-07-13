@@ -56,27 +56,27 @@
             <text x="0px" y="0px" style="font-size:16px;">LS+△: Quicksave</text>
         </g>
         <g transform="matrix(1,0,0,1,585.04,217.92)">
-            <text x="0px" y="0px" style="font-size:16px;">RS: Force Creep Mode</text>
+            <text x="0px" y="0px" style="font-size:16px;">RS: Force Creep</text>
         </g>
         <g transform="matrix(1,0,0,1,8.04,218.92)">
             <text x="0px" y="0px" style="font-size:16px;">LS+○: Quickload</text>
         </g>
         <g transform="matrix(1,0,0,1,-196.199771,30.24624)">
-            <g transform="matrix(1,0,0,1,248.24,15.674)">
+            <g transform="matrix(1,0,0,1,248.24,7.674)">
                 <text x="0px" y="0px" style="font-size:16px;">LB+LS: Lean</text>
             </g>
             <g transform="matrix(1,0,0,1,248.24,31.962)">
                 <text x="0px" y="0px" style="font-size:16px;">LB+DPad: Zoom</text>
             </g>
         </g>
-        <g transform="matrix(1,0,0,1,4.04,11.92)">
+        <g transform="matrix(1,0,0,1,4.04,3.92)">
             <text x="0px" y="0px" style="font-size:16px;">LT: Block</text>
         </g>
-        <g transform="matrix(1,0,0,1,0.24,132)">
-            <text x="0px" y="0px" style="font-size:12px;">Cycle Weapons</text>
+        <g transform="matrix(1,0,0,1,0.24,110)">
+            <text x="0px" y="0px" style="font-size:16px;">Cycle Weapons</text>
         </g>
-        <g transform="matrix(1,0,0,1,0.24,146)">
-            <text x="0px" y="0px" style="font-size:12px;">Cycle Items</text>
+        <g transform="matrix(1,0,0,1,0.24,130)">
+            <text x="0px" y="0px" style="font-size:16px;">Cycle Items</text>
         </g>
         <g transform="matrix(1,0,0,1,608.04,178.92)">
             <text x="0px" y="0px" style="font-size:16px;">□: Use/Drop</text>
