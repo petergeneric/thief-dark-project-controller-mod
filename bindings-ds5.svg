@@ -47,57 +47,48 @@
             <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">RT: Attack</text>
         </g>
         <g transform="matrix(1,0,0,1,605.04,120.92)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">B: Crouch</text>
+            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">○: Crouch</text>
         </g>
         <g transform="matrix(1,0,0,1,609.04,151.92)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">A: Jump / mantle</text>
+            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">×: Jump</text>
         </g>
         <g transform="matrix(1,0,0,1,9.04,197.92)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">LS+Y: Quicksave</text>
+            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">LS+△: Quicksave</text>
         </g>
         <g transform="matrix(1,0,0,1,585.04,217.92)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">RS: Force sneak</text>
+            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">RS: Force Creep Mode</text>
         </g>
         <g transform="matrix(1,0,0,1,8.04,218.92)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">LS+B: Quickload</text>
-        </g>
-        <g transform="matrix(1,0,0,1,8.04,239.92)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">LS: Speed</text>
+            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">LS+○: Quickload</text>
         </g>
         <g transform="matrix(1,0,0,1,-196.199771,30.24624)">
             <g transform="matrix(1,0,0,1,248.24,15.674)">
                 <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">LB+LS: Lean</text>
             </g>
             <g transform="matrix(1,0,0,1,248.24,31.962)">
-                <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">LB+D-pad Up/Down: Zoom</text>
+                <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">LB+DPad: Zoom</text>
             </g>
         </g>
         <g transform="matrix(1,0,0,1,4.04,11.92)">
             <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">LT: Block</text>
         </g>
         <g transform="matrix(1,0,0,1,0.24,118.92)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:12px;">Next Weapon</text>
+            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:12px;">Cycle Weapons</text>
         </g>
         <g transform="matrix(1,0,0,1,0.24,132.92)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:12px;">Prev Weapon</text>
-        </g>
-        <g transform="matrix(1,0,0,1,0.04,91.92)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:12px;">Prev Item</text>
-        </g>
-        <g transform="matrix(1,0,0,1,0.04,105.92)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:12px;">Next Item</text>
+            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:12px;">Cycle Items</text>
         </g>
         <g transform="matrix(1,0,0,1,608.04,178.92)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">X: Use item</text>
+            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">□: Use/Drop</text>
         </g>
         <g transform="matrix(1,0,0,1,594.04,82.92)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">Y: Equip weapon / Drop</text>
+            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">△: Toggle Weapon</text>
         </g>
         <g transform="matrix(1,0,0,1,603.04,47.92)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">RB: Inventory</text>
+            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">RB: Menu</text>
         </g>
         <g transform="matrix(1,0,0,1,277.04,28.208)">
-            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">Back: Map</text>
+            <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">Select: Map</text>
         </g>
     </g>
     <g id="Controller" transform="matrix(0.97348,0,0,0.97348,576.374055,98.969649)">
