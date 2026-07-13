@@ -11,22 +11,22 @@
             <path d="M254.038,254.459L106.564,254.459L106.564,253.459L253.552,253.459L281.887,229.306L282.716,230.013L254.037,254.459L254.038,254.459Z" style="fill-rule:nonzero;"/>
         </g>
         <g transform="matrix(0.737179,0,0,1,3.327718,-103)">
-            <rect x="92.564" y="197.458" width="156" height="1" style=""/>
+            <rect x="92.564" y="218.7" width="151" height="1" style=""/>
         </g>
         <g transform="matrix(1,0,0,1,5,-31)">
             <path d="M181.271,39.306L55.564,39.306L55.564,40.306L180.857,40.306L205.01,64.459L205.717,63.752L181.271,39.306Z" style="fill-rule:nonzero;"/>
         </g>
         <g transform="matrix(1,0,0,1,43,-20)">
-            <rect x="460.564" y="166.458" width="102" height="1" style=""/>
+            <rect x="458.637" y="167.21" width="103.927" height="1" style=""/>
         </g>
         <g transform="matrix(1,0,0,1,41,-21)">
-            <rect x="490.564" y="137.458" width="71" height="1" style=""/>
+            <rect x="492.367" y="136.55" width="69.197" height="1" style=""/>
         </g>
         <g transform="matrix(1,0,0,1,30,-30)">
-            <rect x="460.564" y="107.458" width="102" height="1" style=""/>
+            <rect x="471.737" y="113.9" width="90.827" height="1" style=""/>
         </g>
         <g transform="matrix(1,0,0,1,42,-21)">
-            <path d="M562.564,195.458L437.857,195.458L415.064,172.665L415.064,149.458L416.064,149.458L416.064,172.251L438.271,194.458L562.564,194.458L562.564,195.458Z" style="fill-rule:nonzero;"/>
+            <path d="M562.564,195.458L437.857,195.458L413.67,172.665L413.67,150.987L414.67,150.987L414.67,172.251L438.271,194.458L562.564,194.458L562.564,195.458Z" style="fill-rule:nonzero;"/>
         </g>
         <g transform="matrix(1,0,0,0.442946,-35,10.165456)">
             <path d="M287.51,125.958L288.51,125.958L288.51,57.165L310.564,35.112L309.857,34.405L287.51,56.751L287.51,125.958Z" style="fill-rule:nonzero;"/>
@@ -72,10 +72,10 @@
         <g transform="matrix(1,0,0,1,4.04,11.92)">
             <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:16px;">LT: Block</text>
         </g>
-        <g transform="matrix(1,0,0,1,0.24,118.92)">
+        <g transform="matrix(1,0,0,1,0.24,132)">
             <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:12px;">Cycle Weapons</text>
         </g>
-        <g transform="matrix(1,0,0,1,0.24,132.92)">
+        <g transform="matrix(1,0,0,1,0.24,146)">
             <text x="0px" y="0px" style="font-family:'Balthazar-Regular', 'Balthazar';font-size:12px;">Cycle Items</text>
         </g>
         <g transform="matrix(1,0,0,1,608.04,178.92)">
