@@ -27,7 +27,19 @@ See [Install Guide](INSTALLING.md) for full information. Basic process is:
 Controls
 --------
 
-![](bindings.svg)
+<details open>
+<summary><b>Xbox layout</b> (click to show/hide)</summary>
+
+![Xbox binding diagram](bindings.svg)
+
+</details>
+
+<details>
+<summary><b>DualSense layout</b> (click to show/hide)</summary>
+
+![DualSense binding diagram](bindings-ds5.svg)
+
+</details>
 
 
 ```
