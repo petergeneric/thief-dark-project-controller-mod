@@ -37,3 +37,10 @@ TROUBLESHOOTING
 
 12. The overlay isn't working, or is behaving strangely and I have RivaTuner installed
  - RivaTuner appears to be a bad citizen, and aggressively removes any hooks but its own. Its 'detour' mode appears to work collaboratively with other mods. Despite this, RivaTuner may interfere in other ways, I'd recommend disabling/removing it entirely.
+
+13. My Playstation DualSense controller isn't recognised
+ - In the v2.0 prerelease version, I have native Dualsense support (including advanced haptics). 1.8 doesn't yet have support.
+ - In the meantime, I recommend installing DS4Windows which exposes your Dualsense as a standard XInput device.
+ 
+14. I am using NewDark 1.28 and Crouch is not working
+ - This appears to be an engine bug with controller bindings against `crouch` action in the older version of NewDark 1.28 (20250429). I recommend using 1.27 or the latest 1.28 (20250515)
