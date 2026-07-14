@@ -35,7 +35,7 @@ Controls
 </details>
 
 <details>
-<summary><b>DualSense layout</b> (click to show/hide)</summary>
+<summary><b>DualSense layout</b> (via DS4Windows or v2-prerelease. Click to show/hide)</summary>
 
 ![DualSense binding diagram](bindings-ds5.svg)
 
