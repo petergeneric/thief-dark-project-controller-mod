@@ -39,8 +39,11 @@ TROUBLESHOOTING
  - RivaTuner appears to be a bad citizen, and aggressively removes any hooks but its own. Its 'detour' mode appears to work collaboratively with other mods. Despite this, RivaTuner may interfere in other ways, I'd recommend disabling/removing it entirely.
 
 13. My Playstation DualSense controller isn't recognised
- - In the v2.0 prerelease version, I have native Dualsense support (including advanced haptics). 1.8 doesn't yet have support.
+ - As of version 2.0 (in pre-release currently), I have native Dualsense support (including advanced haptics). 1.8 doesn't yet have this support.
  - In the meantime, I recommend installing DS4Windows which exposes your Dualsense as a standard XInput device.
  
 14. I am using NewDark 1.28 and Crouch is not working
  - This appears to be an engine bug with controller bindings against `crouch` action in the older version of NewDark 1.28 (20250429). I recommend using 1.27 or the latest 1.28 (20250515)
+
+15. My controller isn't working, and it's not a standard modern Xbox controller, nor a Dualsense 5
+ - If you're using an unusual controller that isn't natively supported by SDL3, *and* you're using version 2.0 or later of this mod, you may be able to use [this community-sourced game controller database](https://github.com/mdqinc/SDL_GameControllerDB). If you save their `gamecontrollerdb.txt` file to the thief game root (or to MODS/gamepad) and the mappings will be loaded.
