@@ -1,5 +1,8 @@
 This mod adds full controller support to Thief 1 and Thief 2.
 
+[![Download Latest Version](https://img.shields.io/badge/Download-Latest%20gamepad.zip-brightgreen?style=for-the-badge&logo=github)](https://github.com/petergeneric/thief-dark-project-controller-mod/releases/download/v1.8.1/gamepad.zip)  
+[![Get it on GOG](https://img.shields.io/badge/Get%20it%20on%20GOG-v1.8%20preinstalled-9e8ba8?style=for-the-badge&logo=gogdotcom&logoColor=white)](https://www.gog.com/game/thief_gold)
+  
 [![Watch the video](screenshot.jpeg)](https://www.youtube.com/watch?v=HY29B94PAuA)
 [Demo Video](https://www.youtube.com/watch?v=HY29B94PAuA)
 
