@@ -16,8 +16,15 @@ Features
 - Optional automatic key management (where the mission makes it possible), based off [Sarcoth's excellent J4F Keychain](https://github.com/saracoth/newdark-mods/releases/latest).
 
 
-Installation
-------------
+GOG Installation / Update
+-------------------------
+[The GOG version of Thief Gold](https://www.gog.com/en/game/thief_gold) comes with v1.8.1 of this mod pre-installed, this is the easiest way to get started with Thief.
+Install the GOG version, then launch Gamepad Settings from GOG Galaxy, go to the About tab and Check For Updates to update to the latest version.
+
+Future GOG updates could re-install earlier versions of the mod, so you may wish to copy your install out of the GOG Galaxy folder.
+
+Manual Installation
+-------------------
 
 See [Install Guide](INSTALLING.md) for full information. Basic process is:
 
