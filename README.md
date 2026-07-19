@@ -52,6 +52,9 @@ Controls
 </details>
 
 
+<details open>
+<summary><b>Default Bindings</b> (click to show/hide)</summary>
+
 ```
 Left Stick          Move (analogue)
 Right Stick         Look / camera
@@ -94,6 +97,8 @@ Movement has two speed modes (toggle with LS click):
   Fast mode: small range for walk, rest is run
 Full stick deflection auto-exits slow mode. Keeping the stick below 30% for 1 second auto-returns to slow mode.
 ```
+
+</details>
 
 Configuration
 -------------
