@@ -38,16 +38,24 @@ Controls
 --------
 
 <details open>
-<summary><b>Xbox layout</b> (click to show/hide)</summary>
+<summary><b>Xbox</b></summary>
 
 ![Xbox binding diagram](bindings.svg)
 
 </details>
 
 <details>
-<summary><b>DualSense layout</b> (via DS4Windows or v2-prerelease. Click to show/hide)</summary>
+<summary><b>DualSense</b> (via DS4Windows or v2-prerelease)</summary>
 
 ![DualSense binding diagram](bindings-ds5.svg)
+
+</details>
+
+
+<details>
+<summary><b>Steam Deck</b></summary>
+
+![Steam Deck binding diagram](bindings-deck.svg)
 
 </details>
 
