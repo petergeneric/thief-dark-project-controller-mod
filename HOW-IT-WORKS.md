@@ -2,13 +2,15 @@ How The Controller Mod Works
 ============================
 
 The Dark Engine had old single-stick Joystick support via DirectX's old DirectInput interface.
-Modern pads use XInput. This mod ships with a custom `dinput.dll` that is actually
-a shim between the OS-native DirectX and the Dark Engine.
+This mod ships with a custom `dinput.dll` that is actually a shim between modern native controller APIs and the Dark Engine.
 
 At startup, it claims to be an DirectInput joystick, behaving like a joystick that's plugged-in
-but not used until the player connects a XInput device to their machine. At that point
+but not used until the player connects a gamepad to their machine. At that point
 it forwards the button/stick inputs to the Dark Engine.
 
+To talk to controllers natively, I use SDL3. For the Dualsense controller, I also have custom
+logic that talks directly to the controller via Bluetooth to send advanced haptic information,
+which is ordinarily not supported wirelessly in Windows games.
 
 
 # In Game
@@ -34,6 +36,11 @@ would be very welcome.
 The Dark Engine doesn't have native stick support for freelook, so the right stick emulates
 the mouse.
 
+It's best to configure the Dark Engine to use high-dpi mouse mode, otherwise small stick
+deflections can have 'judder' because we can only move a tiny number of screen pixels
+(and since we must move the mouse by whole number of pixels, if we want to move 0.5
+pixels then we have to do this via a series of 0 and 1 pixel movements to average out to 0.5).
+
 
 ## Radial Menu
 
@@ -45,75 +52,68 @@ switches to internal control mode, where it stops sending gamepad inputs to the 
 
 # In Menus
 
-The mod detects whether the game is in a menu by checking how it's managing the mouse.
-When in-game, the engine resets the mouse to the centre of the screen every frame.
-When the engine stops doing this, the mod enables Menu Mode. It achieves this by
-hooking into the function the engine calls.
-
-Menu Mode operates in three different ways:
-1. **Generic**: map left+right stick to the mouse (with different sensitivity curve to gameplay),
-and A/B to Left Click and Escape key respectively. This is always active.
-2. **Dark Menu Navigation**: where there are 3 or more Engine-level buttons on-screen, the mod 
-detects this and the D-Pad navigates between them. Unfortunately not all clickable items are
-actually top-level Dark Engine buttons ("rects"), so e.g. the start-of-level shop UI cannot
-be fully automated with the D-Pad (same with the options menu)
-3. **Fallback Arrow Keys mode**: NewDark 1.28 has, quite excitingly, added arrow key navigation
-on the Load and Save menus. It works very well on the Load menu, and less well on the Save
-menu. When in this mode (which is enabled if Dark Menu Navigation isn't possible on the screen)
-then the mod maps D-Pad inputs to arrow keys.
-
-## Detection
-
 The Dark Engine has no way to signal to cooperating processes whether the player is in a menu,
 and if so which menu they are in. But its internal state knows this. On startup the mod
 scans through the Dark Engine's RAM and identifies the locations of key menus, and when it
 detects Menu Mode it checks these different locations to see which is active.
 
-# Extra Features
+When the mod detects the engine is in menu mode, it scans through in-memory structures to find
+the active menu, and that menu's clickable regions. DPad buttons move the mouse between those
+clickable rectangles.
 
-In order to make the game play in a more modern way, the mod *optionally* adds a Keyring mod.
-I'm in two minds about whether this is the right thing to do, because it does change the
-actual gameplay (to a more modern style, I think, but undeniably it's a change), and this
-might be against the wishes of FM authors. I'd love feedback on this design decision from
-FM authors!
+For the Save/Load menu, we go further and look for the individual slots (which are not
+reported as clickable menu rectangles), and then move between them.
 
-This functionality can be disabled in gamepad.ini, and automatically disables itself if
-it detects the J4F Keyring mod is also installed.
+# Haptics/Rumble
 
-## Rationale
+If haptics support is enabled, at startup the game attempts to find pre-defined Sound functions
+that I have located (supported in 1.27 and both 1.28 versions) and installs hooks into them
+so that when the engine starts playback of a sound, the sound file name can be inspected
+and translated into a haptic event.
 
-One rationale for including support for a Keyring mod natively in my mod is that I can do
-things that a squirrel script cannot: the mod detects an attempt to frob a locked door and,
-if we have a matching key, it kicks off a FSM that automates the following interaction:
-1. Equip key
-2. Trigger Use action (to bring the key into the centre of the screen)
-3. Trigger Use action (to unlock+open the door)
-4. Unequip the key (to avoid accidentally re-locking the door)
+The engine also communicates to the sound system the world position of the sound, as well as
+the world position of Garrett's "ears", which I use to detect whether the sound was produced
+by/on the player.
 
-This last stage in particular requires access to an engine-internal Inventory Service.
+Haptic events are filtered by user preference (e.g. we detect each footstep and sheath/unsheath,
+but having a controller vibrate for all of those would be overwhelming for the player.
 
-# NewDark Engine Hacking
+When the haptic system decides to play a haptic event for the player, it passes it off to one
+of two haptic drivers:
 
-The NewDark engine is amazing, but it doesn't expose everything we need, so I've had to do
-some disassembly and reverse engineering work on it to get to the structures I need.
+1. Traditional Rumble
+2. Dualsense Advanced Haptics
 
-Ideally I'd love to actually have first-class engine support for this, because it'd make
-it really clean for other developers to do similar things without worrying about new
-engine releases breaking functionality.
+## Rumble
 
-If only NewDark was open to PRs!
+Traditional rumble uses Eccentric Rotating Motors: a motors with an off-centre weight. One motor
+has a light weight, the other has a heavy weight (for lower frequency rumble).
+The mod loads `.rumble` files, which identify which motor to spin, by how much, and for how long.
 
-Here are the following areas that I have to peek inside / modify the engine:
-1. Internal COM Service: InventoryService. InventoryService is necessary because otherwise there is no way I can see to unequip an Item, InvSelect rejects immediately if passed ObjectId 0.
-2. Internal COM Service + hook: ILoop. This is necessary to work out which mode the game is in, and get menu button rects for navigation
-2. Main Menu Layout: requires scanning memory locations to find Main Menu, etc. structures (ILoop hooking does not appear to give me main menu pointer)
-4. Sim Time: the engine appears to suppport changing sim_time with a debug command (symbol
-exists in THIEF.EXE but running it does nothing), however the engine does store an internal
-sim time step value. I scan for this structure at startup (looking for initial values) and
-allow changing it while the game is running. I use this to slow down time while the
-radial menu is open. This is another area where an engine mod to enable sim_time command
-would be really helpful, and it could potentially be opened up to other mods (although not
-without its issues, since setting it too low can cause problems that the OSM can't repair)
-5. EndFrame: to render the radial menu, I hook into EndFrame and then inject arbitrary
-draw commands after the engine has done its work for the frame. The goal by doing this
-is to allow a more complex + faster class of overlays than is possible with the DarkOverlay service.
+## Advanced Haptics
+
+The dualsense uses Voice Coil Motors, which vibrate a weight back and forth like a speaker for
+low frequencies. This allows for incredibly subtle nuanced vibration patterns that change at
+a high rate. The mod embeds the Meta Haptics SDK, reading `.haptic` files and then at runtime
+rendering them into waveforms to be sent to the Dualsense controller. This approach means that
+in the future new profiles can be added for new controller types. Haptic patterns can be
+authored/customised in Meta's Open Source Haptics Studio. The default patterns that ship with
+the mod are based on the audio files.
+
+### Footsteps
+
+Unlike ERMs, the Dualsense Voice Coil Motors are essentially identical between left/right.
+When player footstep haptics are enabled, the mod pans footsteps to the left and right
+of the controller, matching which foot Garrett is setting down in-game.
+
+## FM Haptics and Controller Sounds
+
+I would be really excited if a FM author wanted to add custom haptics/rumble into their mission.
+The mod as-is can intercept any triggered sounds, so for example a squeaky floorboard could
+trigger a different haptic.
+
+Another possibility is playing custom sounds through the Dualsense speaker - imagine ghost
+whispers or chains playing through the controller's speaker independently of the game's normal
+audio.
+
+Reach out to me if you're interested in doing this!
