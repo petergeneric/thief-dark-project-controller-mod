@@ -47,3 +47,6 @@ TROUBLESHOOTING
 
 15. My controller isn't working, and it's not a standard modern Xbox controller, nor a Dualsense 5
  - If you're using an unusual controller that isn't natively supported by SDL3, *and* you're using version 2.0 or later of this mod, you may be able to use [this community-sourced game controller database](https://github.com/mdqinc/SDL_GameControllerDB). If you save their `gamecontrollerdb.txt` file to the thief game root (or to MODS/gamepad) and the mappings will be loaded.
+
+16. I plugged in a wired dualsense after the game started and am not getting rumble in Crossover/Wine
+ - I think this is a hot-plugging limitation with Wine/Crossover. In my testing the audio device the wired dualsense exposes does not appear when hot-plugged in this case.
