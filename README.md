@@ -68,7 +68,9 @@ Left Stick          Move (analogue)
 Right Stick         Look / camera
 
 A                   Jump / mantle
+                    Menu: Confirm
 B                   Crouch
+                    Menu: Back / Skip Cinematic
 X                   Use item
                     Throw Junk (if holding)
 
@@ -84,10 +86,11 @@ RB (hold) + Y		Unequip Weapon+Item
 
 RS click            Force sneak speed
 
-D-pad Up            Cycle Weapons (next)
-D-pad Down          Cycle Weapons (previous)
-D-pad Left          Cycle Items (previous)
-D-pad Right         Cycle Items (next)
+D-PAD           Menu: navigate on-screen menu
+  Up            Cycle Weapons (next)
+  Down          Cycle Weapons (previous)
+  Left          Cycle Items (previous)
+  Right         Cycle Items (next)
 
 LB + Dpad Up/Down   Zoom in/out (Thief 2)
 					N.B. does not work with arrows if Bow Zoom is enabled (game limitation)
@@ -99,6 +102,7 @@ Start               Game menu
 
 L3+Y				Quicksave
 L3+B				Quickload
+                    Menu: Quickload (scripted action sequence)
 
 Movement has two speed modes (toggle with LS click):
   Slow mode: gentle stick = walk, full deflection = run
