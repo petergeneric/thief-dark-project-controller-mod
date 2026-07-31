@@ -28,7 +28,7 @@ Manual Installation
 
 See [Install Guide](INSTALLING.md) for full information. Basic process is:
 
-1. You'll need NewDark 1.27 or 1.28. If in doubt, [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977) or [TFix](https://www.ttlg.com/forums/showthread.php?t=134733). You can also directly install [NewDark 1.28]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)). I find NewDark 1.28 works best.
+1. You'll need NewDark 1.27 or 1.28. If in doubt, [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977) or [TFix](https://www.ttlg.com/forums/showthread.php?t=134733). You can also directly install [NewDark 1.28]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)).
 2. Take a backup of your thief `user.bnd` file
 3. Install gamepad.zip using DMM, and enable the mod
 4. Run `MODS/gamepad/GamepadConfig.exe` (or copy `dinput.dll` from `MODS/gamepad` into your thief install folder)
@@ -102,7 +102,7 @@ Start               Game menu
 
 L3+Y				Quicksave
 L3+B				Quickload
-                    Menu: Quickload (scripted action sequence)
+                    Menu: Quickload
 
 Movement has two speed modes (toggle with LS click):
   Slow mode: gentle stick = walk, full deflection = run
@@ -115,7 +115,8 @@ Full stick deflection auto-exits slow mode. Keeping the stick below 30% for 1 se
 Configuration
 -------------
 
-Use *MODS/gamepad/GamepadConfig.exe* to adjust deadzone, sensitivity, customise button bindings, and more. You can also manually add your own gamepad.ini in the game's folder and customise it.
+Use *MODS/gamepad/GamepadConfig.exe* to adjust deadzone, sensitivity, customise button bindings, and more.
+Key configuration options are available in-game. Click on the Settings button in the in-game radial.
 
 When adjusting look sensitivity, I find it best to keep the game's Mouse Sensitivity reasonably low and increase the mod's sensitivity - this will provide smoother motion at slow speeds (due to how passing mouse inputs to games works).
 Alternatively, enable high dpi mouse settings for the game per the [Install Guide](INSTALLING.md#recommended-high-dpi-mouse-settings).
