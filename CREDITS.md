@@ -1,17 +1,20 @@
-This project relies on the hard work of the community, including:
+This is a free project that would not have been possible without the help of:
 
- - Pixel Art by [Plutonia](https://www.youtube.com/@Plutonia001)
+ - Pixel Art by Plutonia. https://www.youtube.com/@Plutonia001
  - Animated smoke/shadow backdrop by Gamophyte
- - The NewDark developers
- - [osm-rs](https://github.com/JarrodDoyle/osm-rs) Dark Engine Scripting in Rust by Jarrod Doyle
- - [KCTools](https://github.com/JarrodDoyle/KCTools) Dark Engine BIN Model Format by Jarrod Doyle
- - [Ghidra](https://www.nsa.gov/ghidra) by the NSA
- - All the helpful folks on the Thief and DromEd discord servers
- - Xbox Controller diagram: Designed by [reWASD](https://www.rewasd.com/) Team, used with permission
+ - osm-rs Dark Engine Scripting in Rust by Jarrod Doyle. https://github.com/JarrodDoyle/osm-rs
+ - KCTools Dark Engine BIN Model Format by Jarrod Doyle. https://github.com/JarrodDoyle/KCTools
+ - The NewDark Engine developers
+ - "Balthazar" Font Copyright (c) 2011, Dario Manuel Muhafara (http://www.tipo.net.ar), see font/OFL.txt for details
+ - Bluetooth HID structures from DS5Dongle by awalol, https://github.com/awalol/DS5Dongle (MIT License)
+ - Xbox Controller diagram designed by reWASD Team, used with permission. https://www.rewasd.com/
  - Playstation Dualsense [diagram by Sony](https://controller.dl.playstation.net/controller/lang/en/2100001.html)
+ - Steam Deck diagram by Valve Software
 
 
 A huge thank you to the folks who helped me test this mod, and the ideas they provided
- - sub-res
  - marsupial
  - irritablerodent
+ - All the helpful folks on Thief and DromEd discord servers
+
+Gamepad Mod created by Peter Wright
