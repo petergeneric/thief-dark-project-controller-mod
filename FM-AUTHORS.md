@@ -1,3 +1,10 @@
+# FM Metadata
+
+The mod includes Discord Rich Presence. This lets players advertise what FM they're playing.
+This feature pulls from your `fm.ini`'s `NiceName` field.
+You can also set a thumbnail with the `LogoHref` key. Discord wants square and 512x512,
+the mod will crop it for you if it's not square.
+
 # Haptics - Sound Trigger
 
 The mod allows FM Authors to add custom haptics features to their FMs.
