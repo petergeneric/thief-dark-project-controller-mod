@@ -2,8 +2,17 @@
 
 The mod includes Discord Rich Presence. This lets players advertise what FM they're playing.
 This feature pulls from your `fm.ini`'s `NiceName` field.
-You can also set a thumbnail with the `LogoHref` key. Discord wants square and 512x512,
-the mod will crop it for you if it's not square.
+I've added some other new optional fm.ini fields you can populate:
+
+```
+DiscordTitle=
+LogoHref=https://...
+Website=https://...
+```
+
+`DiscordTitle` lets you set a custom short name for the FM for Discord; otherwise your NiceName will be used (and if that's missing, the fmsel / mod folder name)
+`Website` will be linked via a "Get FM" button in Discord Rich Presence cards. Thiefguild is a great option.
+`LogoHref` is a link to a logo. Discord recommends a large, clear, square image. The mod will auto-square and cache the image. I am exploring whether I can use *fmthumb.jpg* (I can't currently)
 
 # Haptics - Sound Trigger
 
