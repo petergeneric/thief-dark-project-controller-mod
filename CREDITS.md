@@ -1,3 +1,5 @@
+Gamepad Mod created by Peter Wright
+
 This is a free project that would not have been possible without the help of:
 
  - Pixel Art by Plutonia. https://www.youtube.com/@Plutonia001
@@ -17,4 +19,4 @@ A huge thank you to the folks who helped me test this mod, and the ideas they pr
  - irritablerodent
  - All the helpful folks on Thief and DromEd discord servers
 
-Gamepad Mod created by Peter Wright
+Korean translation by [Korean Thief Cafe](https://cafe.naver.com/thiefgame)
