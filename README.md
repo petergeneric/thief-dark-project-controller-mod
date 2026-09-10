@@ -1,8 +1,8 @@
-This mod adds full controller support to Thief 1 and Thief 2.
+This mod adds full controller support to Thief 1 and 2.
 
 [![Download Latest Version](https://img.shields.io/badge/Download-Latest%20gamepad.zip-brightgreen?style=for-the-badge&logo=github)](https://github.com/petergeneric/thief-dark-project-controller-mod/releases/download/v2.2/gamepad.zip)  
 [![Get it on GOG](https://img.shields.io/badge/Get%20it%20on%20GOG-v2%20preinstalled-9e8ba8?style=for-the-badge&logo=gogdotcom&logoColor=white)](https://www.gog.com/game/thief_gold)
-  
+
 [![Watch the video](screenshot.jpeg)](https://www.youtube.com/watch?v=HY29B94PAuA)
 [Demo Video](https://www.youtube.com/watch?v=HY29B94PAuA)
 
@@ -13,7 +13,8 @@ Features
 - Keyboard/mouse radial supprt
 - Extensive support for advanced haptics on Dualsense (including via bluetooth), and rumble
 - Time slows when the menu is open
-- D-Pad navigation of key menus
+- D-Pad menu navigation
+- Rumble support
 - Optional automatic key management (where the mission makes it possible), based off [Sarcoth's excellent J4F Keychain](https://github.com/saracoth/newdark-mods/releases/latest).
 
 
@@ -28,12 +29,11 @@ Manual Installation
 -------------------
 
 See [Install Guide](INSTALLING.md) for full information. Basic process is:
+1. Make sure you have **NewDark 1.27 or 1.28** - [TFix Lite](https://www.ttlg.com/forums/showthread.php?t=134733) for Thief 1, [T2Fix Lite](https://www.ttlg.com/forums/showthread.php?t=149669) for Thief 2.
+3. Download `gamepad.zip` below and then run `GamepadConfig.exe` inside the .zip. Point it at your Thief or Thief 2 game folder, and it will install itself (for Steam Deck, run it from the `steam-deck.zip` file instead)
+4. See *Steam Deck, Proton and Wine* below for additional steps for Steam Deck
 
-1. You'll need NewDark 1.27 or 1.28. If in doubt, [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977) or [TFix](https://www.ttlg.com/forums/showthread.php?t=134733), or for Thief 2 [T2Fix](https://www.ttlg.com/forums/showthread.php?t=149669). You can also directly install [NewDark 1.28]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)).
-2. Take a backup of your thief `user.bnd` file
-3. Install gamepad.zip using DMM, and enable the mod
-4. Run `MODS/gamepad/GamepadConfig.exe` (or copy `dinput.dll` from `MODS/gamepad` into your thief install folder)
-5. *Steam Deck users:* Add `WINEDLLOVERRIDES="dinput=n,b" %command%` to your Thief launch arguments in Steam, and enable Joystick Mode for Thief.
+You can also install using [DMM](https://github.com/pshjt/dmm). If you do this, you'll need to run `MODS/gamepad/GamepadConfig.exe` to finish the installation.
 
 Controls
 --------
@@ -116,11 +116,11 @@ Full stick deflection auto-exits slow mode. Keeping the stick below 30% for 1 se
 Configuration
 -------------
 
-Use *MODS/gamepad/GamepadConfig.exe* to adjust deadzone, sensitivity, customise button bindings, and more.
-Key configuration options are available in-game. Click on the Settings button in the in-game radial.
+Use *MODS/gamepad/GamepadConfig.exe* to adjust a range of settings and customisations.
+Some configuration options are available in-game. Click on the Settings button in the in-game radial.
 
 When adjusting look sensitivity, I find it best to keep the game's Mouse Sensitivity reasonably low and increase the mod's sensitivity - this will provide smoother motion at slow speeds (due to how passing mouse inputs to games works).
-Alternatively, enable high dpi mouse settings for the game per the [Install Guide](INSTALLING.md#recommended-high-dpi-mouse-settings).
+For best results, enable high dpi mouse settings for the game per the [Install Guide](INSTALLING.md#recommended-high-dpi-mouse-settings).
 
 Feedback
 --------
