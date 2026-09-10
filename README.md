@@ -19,7 +19,7 @@ Features
 
 GOG Installation / Update
 -------------------------
-[The GOG version of Thief Gold](https://www.gog.com/en/game/thief_gold) comes with v1.8.1 of this mod pre-installed, this is the easiest way to get started with Thief.
+[The GOG version of Thief Gold](https://www.gog.com/en/game/thief_gold) comes with v2 of this mod pre-installed, this is the easiest way to get started with Thief.
 Install the GOG version, then launch Gamepad Settings from GOG Galaxy, go to the About tab and Check For Updates to update to the latest version.
 
 Future GOG updates could re-install earlier versions of the mod, so you may wish to copy your install out of the GOG Galaxy folder.
@@ -29,7 +29,7 @@ Manual Installation
 
 See [Install Guide](INSTALLING.md) for full information. Basic process is:
 
-1. You'll need NewDark 1.27 or 1.28. If in doubt, [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977) or [TFix](https://www.ttlg.com/forums/showthread.php?t=134733). You can also directly install [NewDark 1.28]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)).
+1. You'll need NewDark 1.27 or 1.28. If in doubt, [use RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977) or [TFix](https://www.ttlg.com/forums/showthread.php?t=134733), or for Thief 2 [T2Fix](https://www.ttlg.com/forums/showthread.php?t=149669). You can also directly install [NewDark 1.28]([https://www.ttlg.com/forums/showthread.php?t=152974](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502)) (per [this TTLG thread](https://www.ttlg.com/forums/showthread.php?t=152974)).
 2. Take a backup of your thief `user.bnd` file
 3. Install gamepad.zip using DMM, and enable the mod
 4. Run `MODS/gamepad/GamepadConfig.exe` (or copy `dinput.dll` from `MODS/gamepad` into your thief install folder)
