@@ -9,38 +9,30 @@ After install, if something isn't working properly, see the [Troubleshooting Gui
 Quick Start
 -----------
 
-1. Make sure you have **NewDark 1.27 or 1.28** (see *Engine Version* below).
-2. Take a backup of your Thief `user.bnd` file.
-3. Install `gamepad.zip` with [DMM](https://github.com/pshjt/dmm) and enable the mod.
-4. Run `MODS/gamepad/GamepadConfig.exe`. This copies `dinput.dll` into your game folder
-   for you and lets you customise the mod. (If you prefer, you can skip the config tool
-   and manually copy `dinput.dll` from `MODS/gamepad/` into the root of your game folder,
-   alongside `THIEF.EXE` / `THIEF2.EXE`.)
-5. See *Steam Deck, Proton and Wine* below for additional steps for Steam Deck
+If you're using the GOG version of Thief Gold, the mod is pre-installed. Otherwise:
 
-N.B. Without step 4 the mod cannot work — `dinput.dll` is what converts the engine's old DirectInput API to modern XInput and hooks into the core engine features the mod relies on.
+1. Make sure you have **NewDark 1.27 or 1.28** (see *Engine Version* below on how to install it with TFix/T2Fix or RoguePatcher).
+3. Download `gamepad.zip` and then run `GamepadConfig.exe` inside the .zip. Point it at your Thief or Thief 2 game folder, and it will install itself. If you're on Steam Deck, run it from the `steam-deck.zip` file instead.
+4. See *Steam Deck, Proton and Wine* below for additional steps for Steam Deck
+
+N.B. You can also install using [DMM](https://github.com/pshjt/dmm). If you do this, you'll need to run `MODS/gamepad/GamepadConfig.exe` to finish the installation.
 
 
 Engine Version
 --------------
 
-The mod requires NewDark and supports *v1.27** and **1.28** (tested up to NewDark 1.28 20250515). I find 1.28 works best
+A recent NewDark version is required (v1.27 or v1.28).
 
-If you're unfamiliar with Thief, the easiest way to get a recent, patched engine is to use one of these:
+If you're unfamiliar with Thief, the easiest way is to use one of these updaters:
 
+### Thief 1
+ - [TFix Lite](https://drive.google.com/drive/folders/1CfuL9y-gzyZNb5n5b0098AxNclt2lZPs), or [TFix](https://www.ttlg.com/forums/showthread.php?t=134733)
  - [RoguePatcher](https://www.ttlg.com/forums/showthread.php?t=152977)
- - [TFix](https://www.ttlg.com/forums/showthread.php?t=134733)
  - [NewDark 1.28](https://www.ttlg.com/forums/showthread.php?t=152974) — manual engine update ([download](http://ariane4ever.free.fr/ariane4ever/viewtopic.php?f=2&t=7502))
 
-
-Backing Up Your Bindings
-------------------------
-
-By default, the mod enables joystick input and writes joybutton bindings to your `user.bnd` on launch. If it changes anything, it first backs up your previous settings to `user.bnd.bak`.
-
-You should still take your own backup of `user.bnd` before installing, just in case. The values the mod applies are listed in the bundled `auto.user.bnd`.
-
-If you'd rather manage your own bindings, set `force_joystick_binds = false` in `gamepad.ini`.
+### Thief 2
+ - [T2Fix Lite (Direct Download Link)](https://github.com/Xanfre/T2Fix/releases/download/1.27-2025-08-10/T2Fix_Lite_1.27-2025-08-10.exe)
+ - [T2Fix](https://www.ttlg.com/forums/showthread.php?t=149669)
 
 
 Recommended: High-DPI Mouse Settings
@@ -75,23 +67,25 @@ WINEDLLOVERRIDES="dinput=n,b" %command%
 On Steam Deck, also remember to set Thief to use **Joystick mode** in the controller
 settings.
 
-
-Fan Missions
-------------
-
-If the mod doesn't work (for example in the default version of *The Black Parade*), edit the FM's `fm.cfg` and remove the `apply_dbmods 0` line. That line tells the engine not to load any `.dml`/`.osm` mods (normally to stop mods interfering with the FM, but this also blocks this mod from working).
+The Steam Deck Native Gamepad Config tool (called `GamepadConfig`, rather than `GamepadConfig.exe`) can be installed as a Non-Steam Game so you can configure the mod without having to return to Desktop mode.
 
 
 Gamepads
 --------
 
-Any XInput device should work. The mod has been tested with:
+Any modern controller should work. The mod has been tested with:
 
- - The Xbox Wireless Controller (the primary target)
- - Playstation controllers (e.g. DualSense) via DS4Windows
+ - PS5 and PS4 controllers
+ - The Xbox Wireless Controller
  - Steam Deck
 
 Updating
 --------
 
 The bundled `GamepadConfig.exe` includes an update feature (in the About tab)
+
+
+Backing Up Your Bindings
+------------------------
+
+By default, the mod enables joystick input and writes joybutton bindings to your `user.bnd` at first launch. If it changes anything, it first backs up your previous settings to `user.bnd.bak`.
