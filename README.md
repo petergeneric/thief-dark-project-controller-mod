@@ -1,6 +1,6 @@
 This mod adds full controller support to Thief 1 and 2.
 
-[![Download Latest Version](https://img.shields.io/badge/Download-Latest%20gamepad.zip-brightgreen?style=for-the-badge&logo=github)](https://github.com/petergeneric/thief-dark-project-controller-mod/releases/download/v2.2/gamepad.zip)  
+[![Download Latest Version](https://img.shields.io/badge/Download-Installer-brightgreen?style=for-the-badge&logo=github)](https://github.com/petergeneric/thief-dark-project-controller-mod/releases/download/v2.3/installer-windows.exe)  
 [![Get it on GOG](https://img.shields.io/badge/Get%20it%20on%20GOG-v2%20preinstalled-9e8ba8?style=for-the-badge&logo=gogdotcom&logoColor=white)](https://www.gog.com/game/thief_gold)
 
 [![Watch the video](screenshot.jpeg)](https://www.youtube.com/watch?v=HY29B94PAuA)
@@ -29,11 +29,11 @@ Manual Installation
 -------------------
 
 See [Install Guide](INSTALLING.md) for full information. Basic process is:
-1. Make sure you have **NewDark 1.27 or 1.28** - [TFix Lite](https://www.ttlg.com/forums/showthread.php?t=134733) for Thief 1, [T2Fix Lite](https://www.ttlg.com/forums/showthread.php?t=149669) for Thief 2.
-3. Download `gamepad.zip` below and then run `GamepadConfig.exe` inside the .zip. Point it at your Thief or Thief 2 game folder, and it will install itself (for Steam Deck, run it from the `steam-deck.zip` file instead)
-4. See *Steam Deck, Proton and Wine* below for additional steps for Steam Deck
+1. Make sure you have **NewDark 1.27 or later** - [TFix Lite](https://www.ttlg.com/forums/showthread.php?t=134733) for Thief 1, [T2Fix Lite](https://www.ttlg.com/forums/showthread.php?t=149669) for Thief 2.
+3. On Windows, download and run `installer-windows.exe`, and point it at your Thief 1 or 2 game folder.
+4. For Steam Deck/Linux, follow the [Install Guide](INSTALLING.md)
 
-You can also install using [DMM](https://github.com/pshjt/dmm). If you do this, you'll need to run `MODS/gamepad/GamepadConfig.exe` to finish the installation.
+You can also install `gamepad.zip` using [DMM](https://github.com/pshjt/dmm). If you do this, you'll need to run `MODS/gamepad/GamepadConfig.exe` to finish the installation.
 
 Controls
 --------
